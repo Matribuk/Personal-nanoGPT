@@ -1,0 +1,44 @@
+# --- macOS Junk ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments (Venv/Conda) ---
+# Ignorer les dossiers d'environnement pour ne pas upload tout Python
+venv/
+.venv/
+env/
+mlx-env/
+.conda/
+
+# --- IDE / Editor Settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- Machine Learning / MLX Specific ---
+# Ignorer les datasets (souvent trop lourds)
+data/
+*.txt
+*.jsonl
+*.csv
+
+# Ignorer les poids du modèle (Model checkpoints/weights)
+# GitHub bloque les fichiers > 100MB
+*.npz
+*.safetensors
+*.bin
+*.pt
+*.pth
+checkpoints/
+models/
+out/
+
+# --- Logs & Output ---
+*.log
+runs/
